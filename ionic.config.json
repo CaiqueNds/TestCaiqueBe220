@@ -1,0 +1,7 @@
+{
+  "name": "TestCaiqueBe220",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

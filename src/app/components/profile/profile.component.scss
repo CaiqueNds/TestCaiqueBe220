@@ -1,0 +1,75 @@
+.container-profile {
+  height: 23%;
+  width: 100%;
+  background-color: #1f1f1f;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+}
+
+.container-primary {
+  padding: 10px 30px 0;
+  display: flex;
+}
+
+.container-photo {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-image: url("../../../assets/icon/user.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container-description {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px 0;
+}
+
+.container-secondary {
+  padding: 15px;
+  background: black;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 20px auto 0;
+  border-radius: 30px;
+  div {
+    display: flex;
+    align-items: center;
+    ion-icon {
+      border: 1px #80480e solid;
+      border-radius: 50%;
+      color: #80480e;
+      padding: 2.5px;
+      margin-right: 2.5px;
+      height: 0.7rem;
+      width: 0.7rem;
+    }
+    span {
+      color: #80480e;
+      font-size: 11px;
+    }
+  }
+}
+
+.container-description {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px 0;
+}
+
+.container-profile-name {
+  font-size: 18px;
+  font-size: bold;
+}
+
+.container-profile-level {
+  color: #4b2c96;
+  font-size: 13px;
+  font-size: bold;
+}

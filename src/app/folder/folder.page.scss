@@ -7,8 +7,8 @@ ion-menu-button {
   position: absolute;
   left: 0;
   right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 28%;
+  // transform: translateY(-50%);
 }
 
 #container strong {
@@ -34,13 +34,16 @@ ion-menu-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: black;
+  background-color: #161616;
+  ion-icon {
+    color: #80480e;
+  }
 }
 
 .header-badge {
   height: 0.75rem;
   width: 0.75rem;
-  background: orange;
+  background: #7becd1;
   border-radius: 50%;
   position: absolute;
   top: 0;
@@ -51,57 +54,54 @@ ion-menu-button {
   margin-right: 16px;
 }
 
-.container-profile {
-  height: 33%;
-  width: 100%;
-  background-color: #1f1f1f;
-  border-bottom-left-radius: 80px;
-  border-bottom-right-radius: 80px;
-}
-
 .header-shadow-none {
   box-shadow: unset;
 }
 
-.container-primary {
-  padding: 20px 30px 0;
-  display: flex;
-}
-
 .container-photo {
-  height: 7rem;
-  width: 7rem;
-  background: white;
+  height: 4rem;
+  width: 4rem;
   border-radius: 50%;
+  background-image: url("../../assets/icon/user.png");
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.container-description {
+.container-list-card {
+  flex: 0 0 auto;
+  width: 220px;
+  margin-right: 10px;
+  scroll-snap-align: start;
+  padding: 20px;
+  height: 115px;
+  background: url("../../assets/icon/bodybuilding.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 20px;
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
   justify-content: center;
-  padding: 0 20px 0;
+  align-items: center;
+  ion-icon {
+    border: 1px #dcdcdc solid;
+    border-radius: 50%;
+    padding: 2.5px;
+    margin-right: 5px;
+  }
+  span {
+    width: 50px;
+    text-align: left;
+  }
 }
 
-.container-secondary {
-  padding: 15px 25px;
-  background: black;
-  display: flex;
-  justify-content: space-evenly;
-  width: 70%;
-  margin: 30px auto 0;
-  border-radius: 30px;
-  div {
-    display: flex;
-    align-items: center;
-    ion-icon {
-      border: 1px #dcdcdc solid;
-      border-radius: 50%;
-      padding: 2.5px;
-      margin-right: 5px;
-    }
-    span {
-      font-size: 10px;
-    }
-  }
+ion-menu-button {
+  color: white;
+}
+
+.header-logo {
+  height: 48px;
+  width: 100%;
+  background-image: url("../../assets/icon/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }

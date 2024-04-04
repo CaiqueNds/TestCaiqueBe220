@@ -3,11 +3,11 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
+    <div class="header-logo"></div>
     <ion-buttons class="header-icon" slot="end">
       <div class="header-notification">
         <div class="header-badge"></div>
-        <ion-icon name="notifications-outline"></ion-icon>
+        <ion-icon name="notifications"></ion-icon>
       </div>
     </ion-buttons>
   </ion-toolbar>
@@ -19,36 +19,10 @@
       <ion-title size="large">{{ folder }}</ion-title>
     </ion-toolbar>
   </ion-header>
-  <div class="container-profile">
-    <div class="container-primary">
-      <div class="container-photo"></div>
-      <div class="container-description">
-        <span>Leonardo Santos</span>
-        <span>Nível roxo</span>
-      </div>
-    </div>
-    <div class="container-secondary">
-      <div>
-        <ion-icon name="accessibility-outline"></ion-icon>
-        <span>MEU CORPO</span>
-      </div>
-      <div>
-        <ion-icon name="trophy-outline"></ion-icon>
-        <span>OBJETIVOS E CONQUISTAS</span>
-      </div>
-    </div>
-    <div></div>
-  </div>
+  <app-profile></app-profile>
   <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>
-      Explore
-      <a
-        target="_blank"
-        rel="noopener noreferrer"
-        href="https://ionicframework.com/docs/components"
-        >UI Components</a
-      >
-    </p>
+    <app-content-list></app-content-list>
+    <app-program-list></app-program-list>
+    <app-additional-content-list></app-additional-content-list>
   </div>
 </ion-content>
